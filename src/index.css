@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "clashRegular";
+  src: url("./assets/fonts/ClashDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "clashMedium";
+  src: url("./assets/fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "clashSemiBold";
+  src: url("./assets/fonts/ClashDisplay-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "clashBold";
+  src: url("./assets/fonts/ClashDisplay-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "SFRegular";
+  src: url("./assets/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "SFMedium";
+  src: url("./assets/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "SFSemiBold";
+  src: url("./assets/fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "SFBold";
+  src: url("./assets/fonts/SF-Pro-Display-Bold.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
+
+.text-outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.41) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-blur {
+  backdrop-filter: blur(8px);
+}
