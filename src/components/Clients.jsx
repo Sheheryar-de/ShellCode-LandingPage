@@ -16,7 +16,7 @@ function Clients() {
           alt="map"
           className="w-[1100px] h-[374px] absolute top-[260px] left-[130px] 2xl:left-[170px]"
         />
-        <div className="pt-12 w-[1026px] mx-auto">
+        <div className="pt-12 w-auto mx-auto">
           <p className="uppercase text-center text-[12px] md:text-[20px] tracking-[6px] text-[rgba(224,224,224,1)]">
             Testimonials
           </p>
@@ -44,6 +44,10 @@ function Clients() {
             },
             1024: {
               slidesPerView: 1.5,
+            },
+
+            1536: {
+              slidesPerView: 2,
             },
           }}
           modules={[FreeMode, Pagination]}

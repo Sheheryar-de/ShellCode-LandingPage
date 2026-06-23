@@ -4,10 +4,10 @@ function Tesmonial({ user, name, title, comment, desc }) {
   return (
     <>
       <div className="flex justify-center mt-[60px] md:mt-[130px]">
-        <div className="bg-[rgba(5,5,7,1)] relative overflow-hidden z-50 w-[980px] h-auto pb-6 md:pb-0 md:h-[450px] pt-4 px-2 md:pt-[80px] md:px-8 border border-[rgba(255,255,255,0.3)] rounded-xl">
+        <div className="bg-[rgba(5,5,7,1)] relative overflow-hidden z-50 w-[980px] h-auto pb-6 pt-4 px-2 md:pt-[30px] md:px-8 border border-[rgba(255,255,255,0.3)] rounded-xl">
           <h1
             style={{ fontFamily: "SFMedium" }}
-            className="text-gradient text-[20px] md:text-[35] lg:text-[46px] text-white leading-[21px] md:leading-[54px]"
+            className="text-gradient text-[20px] md:text-[33px] lg:text-[36px] text-white leading-[21px] md:leading-[34px] lg:leading-[48px]"
           >
             {comment}
           </h1>
@@ -17,7 +17,7 @@ function Tesmonial({ user, name, title, comment, desc }) {
           >
             {desc}
           </p>
-          <div className="flex items-center justify-between mt-10 w-[17px] md:w-[220px] h-[60px]">
+          <div className="flex items-center justify-between mt-10 w-[170px] md:w-[220px] h-[60px]">
             <img
               src={user}
               alt="User Picture"

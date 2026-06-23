@@ -4,37 +4,18 @@ import shadow from "..//assets/Ellipse.svg";
 
 const bgImageContainer = {
   position: "relative",
+  width: "100%",
   height: "auto",
-  width: "100%",
-  overflow: "hidden",
-};
-
-const bgImageWrapper = {
-  position: "absolute",
-  top: 0,
-  left: 0,
-  height: "100%",
-  width: "100%",
-  zIndex: -1,
-};
-
-const bgImage = {
   backgroundImage: `url(${BgImage})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  filter: "blur(2px)",
-  height: "100%",
-  width: "100%",
 };
 
 const darkOverlay = {
   position: "absolute",
-  top: 0,
-  left: 0,
-  height: "100%",
-  width: "100%",
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  inset: 0,
+  backgroundColor: "rgba(0,0,0,0.5)",
   zIndex: 0,
 };
 
@@ -42,14 +23,10 @@ function Hero() {
   return (
     <main>
       <div style={bgImageContainer}>
-        <div style={bgImageWrapper}>
-          <div style={bgImage}></div>
-          <div style={darkOverlay}></div>
-        </div>
-        <section className="container mx-auto min-h-[100vh] w-full flex flex-col px-4">
-          <div className=" ">
-            <Navbar />
-          </div>
+        <div style={darkOverlay}></div>
+
+        <section className="relative z-10 container mx-auto h-auto w-full flex flex-col px-4">
+          <Navbar />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-[640px] w-full place-items-center">
             <div className="">
               <h1
